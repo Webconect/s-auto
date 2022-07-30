@@ -6,14 +6,20 @@ function login(e) {
     var data = JSON.parse(user);
     if (!user) {
       alert("vui long nhap username password");
+    } else if(
+      username == "admin" &&
+      password == "admin"
+    ) {
+      window.location.href = "index01.html";
+      alert("Admin Đăng Nhập!");
     } else if (
       username == data.username &&
       password == data.password
     ) {
       window.location.href = "MainControl/index.html";
-      alert("dang nhap thanh cong");
+      alert("User Đăng Nhập!");
     } else {
-      alert("dang nhap that bai");
+      alert("Đăng Nhập Không Thành Công.");
     }
   }
   

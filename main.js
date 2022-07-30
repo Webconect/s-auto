@@ -10,13 +10,13 @@ function login(e) {
       username == "admin" &&
       password == "admin"
     ) {
-      window.location.href = "index01.html";
+      window.location.href = "MainControl/MainAdmin/index.html";
       alert("Admin Đăng Nhập!");
     } else if (
       username == data.username &&
       password == data.password
     ) {
-      window.location.href = "MainControl/index.html";
+      window.location.href = "MainControl/MainControl01/index.html";
       alert("User Đăng Nhập!");
     } else {
       alert("Đăng Nhập Không Thành Công.");
